@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello Angular World</title>
+        <script src="angular.js"></script>
+        <script>
+            var myApp = angular.module("myApp", []);
+            myApp.controller("myController", function($scope) {
+                $scope.welcome = "Hello Angular World, I am in..!!";
+                $scope.name = "Nirmal Davis V";
+            });
+            
+        </script>
+    </head>
+    
+    <body ng-app="myApp">
+      
+       <div id="content" ng-controller="myController">
+          <div>
+             <div><label ng-bind="welcome"></label></div>
+             <div><label>{{name}}</label></div>  
+          </div>     
+       </div>
+        
+    </body>
+</html>
